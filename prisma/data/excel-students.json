@@ -1,0 +1,1222 @@
+{
+  "sheetName": "11월",
+  "students": [
+    {
+      "number": null,
+      "track": "구분",
+      "name": "이름",
+      "gradeLabel": "학년",
+      "gradeNumber": null,
+      "school": "학교",
+      "attendanceCount": 0,
+      "homeworkSubmits": 0,
+      "attendanceRate": null,
+      "lateRate": null,
+      "weekStats": [
+        {
+          "label": "로직테스트",
+          "value": null
+        }
+      ],
+      "homeworkCompletion": null
+    },
+    {
+      "number": 1,
+      "track": "오프라인",
+      "name": "강율비",
+      "gradeLabel": "1학년",
+      "gradeNumber": 10,
+      "school": "부곡고등학교",
+      "attendanceCount": 2,
+      "homeworkSubmits": 0.2222222222222222,
+      "attendanceRate": 0.75,
+      "lateRate": 0,
+      "weekStats": [
+        {
+          "label": "로직테스트",
+          "value": 0.4666666666666667
+        }
+      ],
+      "homeworkCompletion": 0.4666666666666667
+    },
+    {
+      "number": 2,
+      "track": "오프라인",
+      "name": "김경민",
+      "gradeLabel": "1학년",
+      "gradeNumber": 10,
+      "school": "안산강서고등학교",
+      "attendanceCount": 2,
+      "homeworkSubmits": 0.2222222222222222,
+      "attendanceRate": 1,
+      "lateRate": 0.3333333333333333,
+      "weekStats": [
+        {
+          "label": "로직테스트",
+          "value": 0.45
+        }
+      ],
+      "homeworkCompletion": 0.45
+    },
+    {
+      "number": 3,
+      "track": "온라인",
+      "name": "김규성",
+      "gradeLabel": "중2",
+      "gradeNumber": 11,
+      "school": "해외고등학교",
+      "attendanceCount": 0,
+      "homeworkSubmits": 0,
+      "attendanceRate": null,
+      "lateRate": null,
+      "weekStats": [
+        {
+          "label": "로직테스트",
+          "value": null
+        }
+      ],
+      "homeworkCompletion": null
+    },
+    {
+      "number": 4,
+      "track": "오프라인",
+      "name": "김나현",
+      "gradeLabel": "2학년",
+      "gradeNumber": 11,
+      "school": "안산고등학교",
+      "attendanceCount": 6,
+      "homeworkSubmits": 0.6666666666666666,
+      "attendanceRate": 1,
+      "lateRate": 0,
+      "weekStats": [
+        {
+          "label": "로직테스트",
+          "value": 0.2
+        }
+      ],
+      "homeworkCompletion": 0.2
+    },
+    {
+      "number": 5,
+      "track": "오프라인",
+      "name": "김다인",
+      "gradeLabel": "2학년",
+      "gradeNumber": 11,
+      "school": "안산강서고등학교",
+      "attendanceCount": 4,
+      "homeworkSubmits": 0.4444444444444444,
+      "attendanceRate": 1,
+      "lateRate": 0.5,
+      "weekStats": [
+        {
+          "label": "로직테스트",
+          "value": null
+        }
+      ],
+      "homeworkCompletion": null
+    },
+    {
+      "number": 6,
+      "track": "오프라인",
+      "name": "김민재",
+      "gradeLabel": "2학년",
+      "gradeNumber": 11,
+      "school": "송호고등학교",
+      "attendanceCount": 4,
+      "homeworkSubmits": 0.4444444444444444,
+      "attendanceRate": 1,
+      "lateRate": 0,
+      "weekStats": [
+        {
+          "label": "로직테스트",
+          "value": null
+        }
+      ],
+      "homeworkCompletion": null
+    },
+    {
+      "number": 7,
+      "track": "오프라인",
+      "name": "김서준",
+      "gradeLabel": "2학년",
+      "gradeNumber": 11,
+      "school": "고잔고등학교",
+      "attendanceCount": 3,
+      "homeworkSubmits": 0.3333333333333333,
+      "attendanceRate": 1,
+      "lateRate": 0.6666666666666666,
+      "weekStats": [
+        {
+          "label": "로직테스트",
+          "value": null
+        }
+      ],
+      "homeworkCompletion": null
+    },
+    {
+      "number": 8,
+      "track": "오프라인",
+      "name": "김서희",
+      "gradeLabel": "1학년",
+      "gradeNumber": 10,
+      "school": "고잔고등학교",
+      "attendanceCount": 3,
+      "homeworkSubmits": 0.3333333333333333,
+      "attendanceRate": 0.6666666666666666,
+      "lateRate": 0.5,
+      "weekStats": [
+        {
+          "label": "로직테스트",
+          "value": null
+        }
+      ],
+      "homeworkCompletion": null
+    },
+    {
+      "number": 9,
+      "track": "오프라인",
+      "name": "김성민",
+      "gradeLabel": "2학년",
+      "gradeNumber": 11,
+      "school": "송호고등학교",
+      "attendanceCount": 5,
+      "homeworkSubmits": 0.5555555555555556,
+      "attendanceRate": 1,
+      "lateRate": 0,
+      "weekStats": [
+        {
+          "label": "로직테스트",
+          "value": null
+        }
+      ],
+      "homeworkCompletion": 1
+    },
+    {
+      "number": 10,
+      "track": "오프라인",
+      "name": "김세희",
+      "gradeLabel": "2학년",
+      "gradeNumber": 11,
+      "school": "송호고등학교",
+      "attendanceCount": 2,
+      "homeworkSubmits": 0.2222222222222222,
+      "attendanceRate": 0.5,
+      "lateRate": 1,
+      "weekStats": [
+        {
+          "label": "로직테스트",
+          "value": null
+        }
+      ],
+      "homeworkCompletion": 0.5714285714285714
+    },
+    {
+      "number": 11,
+      "track": "온라인",
+      "name": "김송현",
+      "gradeLabel": "1학년",
+      "gradeNumber": 10,
+      "school": "신선여자고등학교",
+      "attendanceCount": 2,
+      "homeworkSubmits": 0.2222222222222222,
+      "attendanceRate": null,
+      "lateRate": null,
+      "weekStats": [
+        {
+          "label": "로직테스트",
+          "value": null
+        }
+      ],
+      "homeworkCompletion": 1
+    },
+    {
+      "number": 12,
+      "track": "오프라인",
+      "name": "김은지",
+      "gradeLabel": "2학년",
+      "gradeNumber": 11,
+      "school": "안산고등학교",
+      "attendanceCount": 2,
+      "homeworkSubmits": 0.2222222222222222,
+      "attendanceRate": 1,
+      "lateRate": 0.6666666666666666,
+      "weekStats": [
+        {
+          "label": "로직테스트",
+          "value": 0.2222222222222222
+        }
+      ],
+      "homeworkCompletion": 0.2222222222222222
+    },
+    {
+      "number": 13,
+      "track": "오프라인",
+      "name": "김하미",
+      "gradeLabel": "중3",
+      "gradeNumber": 9,
+      "school": "해양중학교",
+      "attendanceCount": 6,
+      "homeworkSubmits": 0.75,
+      "attendanceRate": 1,
+      "lateRate": 0,
+      "weekStats": [
+        {
+          "label": "로직테스트",
+          "value": null
+        }
+      ],
+      "homeworkCompletion": null
+    },
+    {
+      "number": 14,
+      "track": "오프라인",
+      "name": "김현아",
+      "gradeLabel": "1학년",
+      "gradeNumber": 10,
+      "school": "디자인문화고등학교",
+      "attendanceCount": 3,
+      "homeworkSubmits": 0.3333333333333333,
+      "attendanceRate": 0.75,
+      "lateRate": 0.3333333333333333,
+      "weekStats": [
+        {
+          "label": "로직테스트",
+          "value": null
+        }
+      ],
+      "homeworkCompletion": null
+    },
+    {
+      "number": 15,
+      "track": "오프라인",
+      "name": "김현우",
+      "gradeLabel": "1학년",
+      "gradeNumber": 10,
+      "school": "디지털미디어고등학교",
+      "attendanceCount": 2,
+      "homeworkSubmits": 0.25,
+      "attendanceRate": 1,
+      "lateRate": 0.5,
+      "weekStats": [
+        {
+          "label": "로직테스트",
+          "value": null
+        }
+      ],
+      "homeworkCompletion": null
+    },
+    {
+      "number": 16,
+      "track": "오프라인",
+      "name": "김현채",
+      "gradeLabel": "2학년",
+      "gradeNumber": 11,
+      "school": "고잔고등학교",
+      "attendanceCount": 3,
+      "homeworkSubmits": 0.3333333333333333,
+      "attendanceRate": 1,
+      "lateRate": 0.5,
+      "weekStats": [
+        {
+          "label": "로직테스트",
+          "value": null
+        }
+      ],
+      "homeworkCompletion": null
+    },
+    {
+      "number": 17,
+      "track": "오프라인",
+      "name": "박민서",
+      "gradeLabel": "1학년",
+      "gradeNumber": 10,
+      "school": "부곡고등학교",
+      "attendanceCount": 4,
+      "homeworkSubmits": 0.4444444444444444,
+      "attendanceRate": 1,
+      "lateRate": 0.3333333333333333,
+      "weekStats": [
+        {
+          "label": "로직테스트",
+          "value": null
+        }
+      ],
+      "homeworkCompletion": 0.5
+    },
+    {
+      "number": 18,
+      "track": "오프라인",
+      "name": "박서현",
+      "gradeLabel": "2학년",
+      "gradeNumber": 11,
+      "school": "송호고등학교",
+      "attendanceCount": 3,
+      "homeworkSubmits": 0.3333333333333333,
+      "attendanceRate": 0.6666666666666666,
+      "lateRate": 0,
+      "weekStats": [
+        {
+          "label": "로직테스트",
+          "value": null
+        }
+      ],
+      "homeworkCompletion": null
+    },
+    {
+      "number": 19,
+      "track": "온라인",
+      "name": "박주하",
+      "gradeLabel": "1학년",
+      "gradeNumber": 1,
+      "school": "",
+      "attendanceCount": 4,
+      "homeworkSubmits": 0.4444444444444444,
+      "attendanceRate": null,
+      "lateRate": null,
+      "weekStats": [
+        {
+          "label": "로직테스트",
+          "value": null
+        }
+      ],
+      "homeworkCompletion": null
+    },
+    {
+      "number": 20,
+      "track": "오프라인",
+      "name": "방승현",
+      "gradeLabel": "2학년",
+      "gradeNumber": 11,
+      "school": "안산고등학교",
+      "attendanceCount": 4,
+      "homeworkSubmits": 0.4444444444444444,
+      "attendanceRate": 1,
+      "lateRate": 0,
+      "weekStats": [
+        {
+          "label": "로직테스트",
+          "value": null
+        }
+      ],
+      "homeworkCompletion": null
+    },
+    {
+      "number": 21,
+      "track": "오프라인",
+      "name": "방시현",
+      "gradeLabel": "2학년",
+      "gradeNumber": 11,
+      "school": "안산고등학교",
+      "attendanceCount": 2,
+      "homeworkSubmits": 0.2222222222222222,
+      "attendanceRate": 1,
+      "lateRate": 0.3333333333333333,
+      "weekStats": [
+        {
+          "label": "로직테스트",
+          "value": 0.5
+        }
+      ],
+      "homeworkCompletion": 0.5
+    },
+    {
+      "number": 22,
+      "track": "오프라인",
+      "name": "방준혁",
+      "gradeLabel": "중3",
+      "gradeNumber": 9,
+      "school": "해양중학교",
+      "attendanceCount": 2,
+      "homeworkSubmits": 0.2222222222222222,
+      "attendanceRate": null,
+      "lateRate": null,
+      "weekStats": [
+        {
+          "label": "로직테스트",
+          "value": null
+        }
+      ],
+      "homeworkCompletion": null
+    },
+    {
+      "number": 23,
+      "track": "오프라인",
+      "name": "방현승",
+      "gradeLabel": "중3",
+      "gradeNumber": 9,
+      "school": "시곡중학교",
+      "attendanceCount": 7,
+      "homeworkSubmits": 0.7777777777777778,
+      "attendanceRate": 1,
+      "lateRate": 0,
+      "weekStats": [
+        {
+          "label": "로직테스트",
+          "value": null
+        }
+      ],
+      "homeworkCompletion": null
+    },
+    {
+      "number": 24,
+      "track": "오프라인",
+      "name": "배송주",
+      "gradeLabel": "2학년",
+      "gradeNumber": 11,
+      "school": "송호고등학교",
+      "attendanceCount": 4,
+      "homeworkSubmits": 0.4444444444444444,
+      "attendanceRate": 0.6666666666666666,
+      "lateRate": 0,
+      "weekStats": [
+        {
+          "label": "로직테스트",
+          "value": null
+        }
+      ],
+      "homeworkCompletion": null
+    },
+    {
+      "number": 25,
+      "track": "오프라인",
+      "name": "백수민",
+      "gradeLabel": "2학년",
+      "gradeNumber": 11,
+      "school": "송호고등학교",
+      "attendanceCount": 3,
+      "homeworkSubmits": 0.375,
+      "attendanceRate": 1,
+      "lateRate": 0,
+      "weekStats": [
+        {
+          "label": "로직테스트",
+          "value": 0.5555555555555556
+        }
+      ],
+      "homeworkCompletion": 0.5555555555555556
+    },
+    {
+      "number": 26,
+      "track": "오프라인",
+      "name": "변준엽",
+      "gradeLabel": "1학년",
+      "gradeNumber": 10,
+      "school": "동산고등학교",
+      "attendanceCount": 2,
+      "homeworkSubmits": 0.2222222222222222,
+      "attendanceRate": 1,
+      "lateRate": 0.6666666666666666,
+      "weekStats": [
+        {
+          "label": "로직테스트",
+          "value": null
+        }
+      ],
+      "homeworkCompletion": null
+    },
+    {
+      "number": 27,
+      "track": "오프라인",
+      "name": "봉지완",
+      "gradeLabel": "3학년",
+      "gradeNumber": 9,
+      "school": "수현중학교",
+      "attendanceCount": 0,
+      "homeworkSubmits": 0,
+      "attendanceRate": null,
+      "lateRate": null,
+      "weekStats": [
+        {
+          "label": "로직테스트",
+          "value": null
+        }
+      ],
+      "homeworkCompletion": null
+    },
+    {
+      "number": 28,
+      "track": "오프라인",
+      "name": "서지우",
+      "gradeLabel": "1학년",
+      "gradeNumber": 10,
+      "school": "초지고등학교",
+      "attendanceCount": 0,
+      "homeworkSubmits": 0,
+      "attendanceRate": 0.3333333333333333,
+      "lateRate": 0,
+      "weekStats": [
+        {
+          "label": "로직테스트",
+          "value": null
+        }
+      ],
+      "homeworkCompletion": null
+    },
+    {
+      "number": 29,
+      "track": "오프라인",
+      "name": "선시우",
+      "gradeLabel": "중3",
+      "gradeNumber": 9,
+      "school": "시곡중학교",
+      "attendanceCount": 5,
+      "homeworkSubmits": 0.5555555555555556,
+      "attendanceRate": 1,
+      "lateRate": 0,
+      "weekStats": [
+        {
+          "label": "로직테스트",
+          "value": null
+        }
+      ],
+      "homeworkCompletion": null
+    },
+    {
+      "number": 30,
+      "track": "오프라인",
+      "name": "소재빈",
+      "gradeLabel": "2학년",
+      "gradeNumber": 11,
+      "school": "성포고등학교",
+      "attendanceCount": 3,
+      "homeworkSubmits": 0.3333333333333333,
+      "attendanceRate": 1,
+      "lateRate": 0.6666666666666666,
+      "weekStats": [
+        {
+          "label": "로직테스트",
+          "value": 0.4
+        }
+      ],
+      "homeworkCompletion": 0.4
+    },
+    {
+      "number": 31,
+      "track": "오프라인",
+      "name": "송예린",
+      "gradeLabel": "1학년",
+      "gradeNumber": 10,
+      "school": "동산고등학교",
+      "attendanceCount": 7,
+      "homeworkSubmits": 0.7777777777777778,
+      "attendanceRate": 1,
+      "lateRate": 0,
+      "weekStats": [
+        {
+          "label": "로직테스트",
+          "value": null
+        }
+      ],
+      "homeworkCompletion": null
+    },
+    {
+      "number": 32,
+      "track": "오프라인",
+      "name": "송지혜",
+      "gradeLabel": "2학년",
+      "gradeNumber": 11,
+      "school": "성안고등학교",
+      "attendanceCount": 2,
+      "homeworkSubmits": 0.2222222222222222,
+      "attendanceRate": 1,
+      "lateRate": 0.5,
+      "weekStats": [
+        {
+          "label": "로직테스트",
+          "value": 0.09090909090909091
+        }
+      ],
+      "homeworkCompletion": 0.09090909090909091
+    },
+    {
+      "number": 33,
+      "track": "온라인",
+      "name": "신예지",
+      "gradeLabel": "2학년",
+      "gradeNumber": 11,
+      "school": "미추홀외국어고등학교",
+      "attendanceCount": 3,
+      "homeworkSubmits": 0.3333333333333333,
+      "attendanceRate": null,
+      "lateRate": null,
+      "weekStats": [
+        {
+          "label": "로직테스트",
+          "value": null
+        }
+      ],
+      "homeworkCompletion": null
+    },
+    {
+      "number": 34,
+      "track": "오프라인",
+      "name": "심상민",
+      "gradeLabel": "1학년",
+      "gradeNumber": 10,
+      "school": "송호고등학교",
+      "attendanceCount": 3,
+      "homeworkSubmits": 0.3333333333333333,
+      "attendanceRate": 1,
+      "lateRate": 0,
+      "weekStats": [
+        {
+          "label": "로직테스트",
+          "value": null
+        }
+      ],
+      "homeworkCompletion": null
+    },
+    {
+      "number": 35,
+      "track": "오프라인",
+      "name": "안건하",
+      "gradeLabel": "1학년",
+      "gradeNumber": 10,
+      "school": "안산고등학교",
+      "attendanceCount": 2,
+      "homeworkSubmits": 0.2222222222222222,
+      "attendanceRate": 1,
+      "lateRate": 0,
+      "weekStats": [
+        {
+          "label": "로직테스트",
+          "value": null
+        }
+      ],
+      "homeworkCompletion": null
+    },
+    {
+      "number": 36,
+      "track": "오프라인",
+      "name": "안세진",
+      "gradeLabel": "2학년",
+      "gradeNumber": 11,
+      "school": "양지고등학교",
+      "attendanceCount": 6,
+      "homeworkSubmits": 0.75,
+      "attendanceRate": 1,
+      "lateRate": 0.3333333333333333,
+      "weekStats": [
+        {
+          "label": "로직테스트",
+          "value": null
+        }
+      ],
+      "homeworkCompletion": 0.9
+    },
+    {
+      "number": 37,
+      "track": "온라인",
+      "name": "엄태균",
+      "gradeLabel": "2학년",
+      "gradeNumber": 11,
+      "school": "용남고등학교",
+      "attendanceCount": 0,
+      "homeworkSubmits": 0,
+      "attendanceRate": null,
+      "lateRate": null,
+      "weekStats": [
+        {
+          "label": "로직테스트",
+          "value": null
+        }
+      ],
+      "homeworkCompletion": null
+    },
+    {
+      "number": 38,
+      "track": "오프라인",
+      "name": "유세영",
+      "gradeLabel": "2학년",
+      "gradeNumber": 11,
+      "school": "송호고등학교",
+      "attendanceCount": 4,
+      "homeworkSubmits": 0.5,
+      "attendanceRate": 1,
+      "lateRate": 0.25,
+      "weekStats": [
+        {
+          "label": "로직테스트",
+          "value": null
+        }
+      ],
+      "homeworkCompletion": 1
+    },
+    {
+      "number": 39,
+      "track": "오프라인",
+      "name": "유준상",
+      "gradeLabel": "1학년",
+      "gradeNumber": 10,
+      "school": "부곡고등학교",
+      "attendanceCount": 1,
+      "homeworkSubmits": 0.1111111111111111,
+      "attendanceRate": 1,
+      "lateRate": 0,
+      "weekStats": [
+        {
+          "label": "로직테스트",
+          "value": null
+        }
+      ],
+      "homeworkCompletion": null
+    },
+    {
+      "number": 40,
+      "track": "오프라인",
+      "name": "윤서진",
+      "gradeLabel": "2학년",
+      "gradeNumber": 11,
+      "school": "경안고등학교",
+      "attendanceCount": 2,
+      "homeworkSubmits": 0.25,
+      "attendanceRate": 0.5,
+      "lateRate": 0,
+      "weekStats": [
+        {
+          "label": "로직테스트",
+          "value": 0.8571428571428571
+        }
+      ],
+      "homeworkCompletion": 0.8571428571428571
+    },
+    {
+      "number": 41,
+      "track": "오프라인",
+      "name": "윤지민",
+      "gradeLabel": "2학년",
+      "gradeNumber": 11,
+      "school": "송호고등학교",
+      "attendanceCount": 1,
+      "homeworkSubmits": 0.14285714285714285,
+      "attendanceRate": 1,
+      "lateRate": 0.5,
+      "weekStats": [
+        {
+          "label": "로직테스트",
+          "value": 0.3333333333333333
+        }
+      ],
+      "homeworkCompletion": 0.3333333333333333
+    },
+    {
+      "number": 42,
+      "track": "오프라인",
+      "name": "윤혜민",
+      "gradeLabel": "2학년",
+      "gradeNumber": 11,
+      "school": "고잔고등학교",
+      "attendanceCount": 7,
+      "homeworkSubmits": 0.7777777777777778,
+      "attendanceRate": 1,
+      "lateRate": 0,
+      "weekStats": [
+        {
+          "label": "로직테스트",
+          "value": 0.36363636363636365
+        }
+      ],
+      "homeworkCompletion": 0.36363636363636365
+    },
+    {
+      "number": 43,
+      "track": "오프라인",
+      "name": "이대권",
+      "gradeLabel": "1학년",
+      "gradeNumber": 10,
+      "school": "경안고등학교",
+      "attendanceCount": 2,
+      "homeworkSubmits": 0.2222222222222222,
+      "attendanceRate": 0.75,
+      "lateRate": 0,
+      "weekStats": [
+        {
+          "label": "로직테스트",
+          "value": null
+        }
+      ],
+      "homeworkCompletion": null
+    },
+    {
+      "number": 44,
+      "track": "오프라인",
+      "name": "이상훈",
+      "gradeLabel": "2학년",
+      "gradeNumber": 11,
+      "school": "동산고등학교",
+      "attendanceCount": 0,
+      "homeworkSubmits": 0,
+      "attendanceRate": 1,
+      "lateRate": 0,
+      "weekStats": [
+        {
+          "label": "로직테스트",
+          "value": null
+        }
+      ],
+      "homeworkCompletion": null
+    },
+    {
+      "number": 45,
+      "track": "온라인",
+      "name": "이석호",
+      "gradeLabel": "2학년",
+      "gradeNumber": 2,
+      "school": "",
+      "attendanceCount": 0,
+      "homeworkSubmits": 0,
+      "attendanceRate": null,
+      "lateRate": null,
+      "weekStats": [
+        {
+          "label": "로직테스트",
+          "value": null
+        }
+      ],
+      "homeworkCompletion": null
+    },
+    {
+      "number": 46,
+      "track": "오프라인",
+      "name": "이세영",
+      "gradeLabel": "2학년",
+      "gradeNumber": 11,
+      "school": "송호고등학교",
+      "attendanceCount": 2,
+      "homeworkSubmits": 0.2857142857142857,
+      "attendanceRate": 1,
+      "lateRate": 0,
+      "weekStats": [
+        {
+          "label": "로직테스트",
+          "value": 0.2
+        }
+      ],
+      "homeworkCompletion": 0.2
+    },
+    {
+      "number": 47,
+      "track": "오프라인",
+      "name": "이세영",
+      "gradeLabel": "중3",
+      "gradeNumber": 9,
+      "school": "해양중학교",
+      "attendanceCount": 4,
+      "homeworkSubmits": 0.8,
+      "attendanceRate": 1,
+      "lateRate": 0,
+      "weekStats": [
+        {
+          "label": "로직테스트",
+          "value": null
+        }
+      ],
+      "homeworkCompletion": null
+    },
+    {
+      "number": 48,
+      "track": "오프라인",
+      "name": "이세현",
+      "gradeLabel": "2학년",
+      "gradeNumber": 11,
+      "school": "안산고등학교",
+      "attendanceCount": 3,
+      "homeworkSubmits": 0.3333333333333333,
+      "attendanceRate": 1,
+      "lateRate": 0,
+      "weekStats": [
+        {
+          "label": "로직테스트",
+          "value": 0.4444444444444444
+        }
+      ],
+      "homeworkCompletion": 0.4444444444444444
+    },
+    {
+      "number": 49,
+      "track": "오프라인",
+      "name": "이영채",
+      "gradeLabel": "2학년",
+      "gradeNumber": 11,
+      "school": "송호고등학교",
+      "attendanceCount": 4,
+      "homeworkSubmits": 0.4444444444444444,
+      "attendanceRate": 0.6666666666666666,
+      "lateRate": 0.5,
+      "weekStats": [
+        {
+          "label": "로직테스트",
+          "value": 0.46153846153846156
+        }
+      ],
+      "homeworkCompletion": 0.46153846153846156
+    },
+    {
+      "number": 50,
+      "track": "오프라인",
+      "name": "이주하",
+      "gradeLabel": "2학년",
+      "gradeNumber": 11,
+      "school": "송호고등학교",
+      "attendanceCount": 3,
+      "homeworkSubmits": 0.3333333333333333,
+      "attendanceRate": 1,
+      "lateRate": 0,
+      "weekStats": [
+        {
+          "label": "로직테스트",
+          "value": null
+        }
+      ],
+      "homeworkCompletion": null
+    },
+    {
+      "number": 51,
+      "track": "오프라인",
+      "name": "이주호",
+      "gradeLabel": "1학년",
+      "gradeNumber": 10,
+      "school": "안산강서고등학교",
+      "attendanceCount": 3,
+      "homeworkSubmits": 0.42857142857142855,
+      "attendanceRate": 1,
+      "lateRate": 0,
+      "weekStats": [
+        {
+          "label": "로직테스트",
+          "value": null
+        }
+      ],
+      "homeworkCompletion": null
+    },
+    {
+      "number": 52,
+      "track": "오프라인",
+      "name": "이채원",
+      "gradeLabel": "2학년",
+      "gradeNumber": 11,
+      "school": "송호고등학교",
+      "attendanceCount": 2,
+      "homeworkSubmits": 0.2222222222222222,
+      "attendanceRate": 1,
+      "lateRate": 0.5,
+      "weekStats": [
+        {
+          "label": "로직테스트",
+          "value": 1
+        }
+      ],
+      "homeworkCompletion": 1
+    },
+    {
+      "number": 53,
+      "track": "오프라인",
+      "name": "임수민",
+      "gradeLabel": "2학년",
+      "gradeNumber": 11,
+      "school": "안산고등학교",
+      "attendanceCount": 0,
+      "homeworkSubmits": 0,
+      "attendanceRate": 1,
+      "lateRate": 0,
+      "weekStats": [
+        {
+          "label": "로직테스트",
+          "value": null
+        }
+      ],
+      "homeworkCompletion": null
+    },
+    {
+      "number": 54,
+      "track": "오프라인",
+      "name": "정연우",
+      "gradeLabel": "2학년",
+      "gradeNumber": 11,
+      "school": "송호고등학교",
+      "attendanceCount": 3,
+      "homeworkSubmits": 0.3333333333333333,
+      "attendanceRate": 1,
+      "lateRate": 0,
+      "weekStats": [
+        {
+          "label": "로직테스트",
+          "value": null
+        }
+      ],
+      "homeworkCompletion": null
+    },
+    {
+      "number": 55,
+      "track": "온라인",
+      "name": "조영원",
+      "gradeLabel": "2학년",
+      "gradeNumber": 2,
+      "school": "",
+      "attendanceCount": 4,
+      "homeworkSubmits": 0.4444444444444444,
+      "attendanceRate": null,
+      "lateRate": null,
+      "weekStats": [
+        {
+          "label": "로직테스트",
+          "value": null
+        }
+      ],
+      "homeworkCompletion": null
+    },
+    {
+      "number": 56,
+      "track": "오프라인",
+      "name": "조정민",
+      "gradeLabel": "1학년",
+      "gradeNumber": 10,
+      "school": "초지고등학교",
+      "attendanceCount": 5,
+      "homeworkSubmits": 0.5555555555555556,
+      "attendanceRate": 1,
+      "lateRate": 0,
+      "weekStats": [
+        {
+          "label": "로직테스트",
+          "value": null
+        }
+      ],
+      "homeworkCompletion": null
+    },
+    {
+      "number": 57,
+      "track": "오프라인",
+      "name": "최동건",
+      "gradeLabel": "2학년",
+      "gradeNumber": 11,
+      "school": "송호고등학교",
+      "attendanceCount": 4,
+      "homeworkSubmits": 0.4444444444444444,
+      "attendanceRate": 1,
+      "lateRate": 0,
+      "weekStats": [
+        {
+          "label": "로직테스트",
+          "value": null
+        }
+      ],
+      "homeworkCompletion": 1
+    },
+    {
+      "number": 58,
+      "track": "오프라인",
+      "name": "최서연",
+      "gradeLabel": "1학년",
+      "gradeNumber": 10,
+      "school": "송호고등학교",
+      "attendanceCount": 4,
+      "homeworkSubmits": 0.4444444444444444,
+      "attendanceRate": 0.75,
+      "lateRate": 0,
+      "weekStats": [
+        {
+          "label": "로직테스트",
+          "value": null
+        }
+      ],
+      "homeworkCompletion": null
+    },
+    {
+      "number": 59,
+      "track": "오프라인",
+      "name": "최예진",
+      "gradeLabel": "1학년",
+      "gradeNumber": 10,
+      "school": "디지털미디어고등학교",
+      "attendanceCount": 2,
+      "homeworkSubmits": 0.2857142857142857,
+      "attendanceRate": 1,
+      "lateRate": 0,
+      "weekStats": [
+        {
+          "label": "로직테스트",
+          "value": null
+        }
+      ],
+      "homeworkCompletion": null
+    },
+    {
+      "number": 60,
+      "track": "오프라인",
+      "name": "한지연",
+      "gradeLabel": "2학년",
+      "gradeNumber": 11,
+      "school": "송호고등학교",
+      "attendanceCount": 1,
+      "homeworkSubmits": 0.1111111111111111,
+      "attendanceRate": 1,
+      "lateRate": 0,
+      "weekStats": [
+        {
+          "label": "로직테스트",
+          "value": null
+        }
+      ],
+      "homeworkCompletion": null
+    },
+    {
+      "number": 61,
+      "track": "오프라인",
+      "name": "한지호",
+      "gradeLabel": "2학년",
+      "gradeNumber": 11,
+      "school": "고잔고등학교",
+      "attendanceCount": 1,
+      "homeworkSubmits": 0.1111111111111111,
+      "attendanceRate": 0.5,
+      "lateRate": 1,
+      "weekStats": [
+        {
+          "label": "로직테스트",
+          "value": null
+        }
+      ],
+      "homeworkCompletion": null
+    },
+    {
+      "number": 62,
+      "track": "오프라인",
+      "name": "한현서",
+      "gradeLabel": "1학년",
+      "gradeNumber": 10,
+      "school": "초지고등학교",
+      "attendanceCount": 4,
+      "homeworkSubmits": 0.5714285714285714,
+      "attendanceRate": 1,
+      "lateRate": 0,
+      "weekStats": [
+        {
+          "label": "로직테스트",
+          "value": null
+        }
+      ],
+      "homeworkCompletion": null
+    },
+    {
+      "number": 63,
+      "track": "오프라인",
+      "name": "허지우",
+      "gradeLabel": "2학년",
+      "gradeNumber": 11,
+      "school": "동산고등학교",
+      "attendanceCount": 1,
+      "homeworkSubmits": 0.1111111111111111,
+      "attendanceRate": 1,
+      "lateRate": 0.5,
+      "weekStats": [
+        {
+          "label": "로직테스트",
+          "value": 1
+        }
+      ],
+      "homeworkCompletion": 1
+    }
+  ],
+  "completionLabel": "숙제 완료율"
+}

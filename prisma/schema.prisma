@@ -1,0 +1,179 @@
+// This is your Prisma schema file,
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+
+// Looking for ways to speed up your queries, or scale easily with your serverless or edge functions?
+// Try Prisma Accelerate: https://pris.ly/cli/accelerate-init
+
+generator client {
+  provider = "prisma-client"
+  output   = "../src/generated/prisma-client"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+enum Role {
+  ADMIN
+  TEACHER
+}
+
+enum AttendanceStatus {
+  PRESENT
+  LATE
+  ABSENT
+  NONE
+}
+
+enum HomeworkStatus {
+  SUBMITTED
+  NOT_SUBMITTED
+  NO_HOMEWORK
+}
+
+enum ScheduleStatus {
+  DRAFT
+  CONFIRMED
+}
+
+model User {
+  id        Int                 @id @default(autoincrement())
+  email     String              @unique
+  password  String
+  name      String
+  phone     String?
+  age       Int?
+  memo      String?
+  role      Role                @default(TEACHER)
+  isActive  Boolean             @default(true)
+  createdAt DateTime            @default(now())
+  updatedAt DateTime            @updatedAt
+  students  TeacherStudent[]
+  records   DailyRecord[]       @relation("TeacherRecord")
+  unavailableSlots TeacherUnavailableSlot[]
+  weeklyAvailabilities TeacherWeeklyAvailability[]
+  lessonSchedules LessonSchedule[]
+}
+
+model Student {
+  id          Int                 @id @default(autoincrement())
+  name        String
+  gradeNumber Int
+  school      String?
+  isActive    Boolean             @default(true)
+  isOnline    Boolean             @default(true)
+  createdAt   DateTime            @default(now())
+  updatedAt   DateTime            @updatedAt
+  records     DailyRecord[]
+  teachers    TeacherStudent[]
+  lessonSchedules LessonSchedule[]
+}
+
+model TeacherStudent {
+  teacherId Int
+  studentId Int
+  assignedAt DateTime @default(now())
+
+  teacher User    @relation(fields: [teacherId], references: [id])
+  student Student @relation(fields: [studentId], references: [id])
+
+  @@id([teacherId, studentId])
+}
+
+model LessonDay {
+  id           Int            @id @default(autoincrement())
+  date         DateTime       @unique @db.Date
+  year         Int
+  month        Int
+  weekOfMonth  Int?
+  weekLabel    String?
+  hasHomework  Boolean        @default(false)
+  createdAt    DateTime       @default(now())
+  updatedAt    DateTime       @updatedAt
+  dailyRecords DailyRecord[]
+}
+
+model DailyRecord {
+  id                Int              @id @default(autoincrement())
+  studentId         Int
+  lessonDayId       Int
+  teacherId         Int?
+  attendanceStatus  AttendanceStatus @default(NONE)
+  homeworkStatus    HomeworkStatus   @default(NO_HOMEWORK)
+  memo              String?
+  createdAt         DateTime         @default(now())
+  updatedAt         DateTime         @updatedAt
+
+  student   Student   @relation(fields: [studentId], references: [id])
+  lessonDay LessonDay @relation(fields: [lessonDayId], references: [id])
+  teacher   User?     @relation("TeacherRecord", fields: [teacherId], references: [id])
+
+  @@unique([studentId, lessonDayId])
+}
+
+model ScheduleSetting {
+  id                     Int      @id @default(autoincrement())
+  weekdays               Int[]
+  startTimeMinutes       Int
+  endTimeMinutes         Int
+  lessonDurationMinutes  Int       @default(50)
+  breakDurationMinutes   Int       @default(10)
+  timezone               String    @default("Asia/Seoul")
+  createdAt              DateTime  @default(now())
+  updatedAt              DateTime  @updatedAt
+}
+
+model TeacherUnavailableSlot {
+  id            Int      @id @default(autoincrement())
+  teacherId     Int
+  weekday       Int
+  startMinutes  Int
+  endMinutes    Int
+  memo          String?
+  createdAt     DateTime @default(now())
+  updatedAt     DateTime @updatedAt
+
+  teacher User @relation(fields: [teacherId], references: [id])
+
+  @@index([teacherId, weekday])
+  @@unique([teacherId, weekday, startMinutes, endMinutes])
+}
+
+model TeacherWeeklyAvailability {
+  id           Int      @id @default(autoincrement())
+  teacherId    Int
+  date         DateTime @db.Date
+  startMinutes Int
+  endMinutes   Int
+  isAvailable  Boolean  @default(true)
+  memo         String?
+  createdAt    DateTime @default(now())
+  updatedAt    DateTime @updatedAt
+
+  teacher User @relation(fields: [teacherId], references: [id])
+
+  @@unique([teacherId, date, startMinutes, endMinutes])
+  @@index([teacherId, date])
+}
+
+model LessonSchedule {
+  id           Int            @id @default(autoincrement())
+  teacherId    Int
+  studentId    Int
+  date         DateTime       @db.Date
+  startMinutes Int
+  endMinutes   Int
+  status       ScheduleStatus @default(DRAFT)
+  memo         String?
+  createdAt    DateTime       @default(now())
+  updatedAt    DateTime       @updatedAt
+
+  teacher User    @relation(fields: [teacherId], references: [id])
+  student Student @relation(fields: [studentId], references: [id])
+
+  @@unique([teacherId, studentId, date, startMinutes, endMinutes])
+  @@index([teacherId, date])
+  @@index([studentId, date])
+  @@index([date, status])
+}
