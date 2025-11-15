@@ -47,7 +47,7 @@ export function WeeklyAvailabilityManager({
   nextWeekHref,
   currentWeekLabel,
 }: Props) {
-  const [entries, setEntries] = useState(() => {
+  const [entries, setEntries] = useState<Map<string, SlotRecord>>(() => {
     const map = new Map<string, SlotRecord>();
     slots.forEach((slot) => {
       const key = `${slot.date}-${slot.startMinutes}`;
@@ -92,14 +92,13 @@ export function WeeklyAvailabilityManager({
     if (!isEditing) return;
 
     const key = `${dateStr}-${slot.startMinutes}`;
-    const current = entries.get(key);
-    const nextState = !current;
+    const hasEntry = entries.has(key);
+    const nextState = !hasEntry;
 
     setEntries((prev) => {
       const clone = new Map(prev);
       if (nextState) {
         clone.set(key, {
-          id: current?.id,
           date: dateStr,
           startMinutes: slot.startMinutes,
           endMinutes: slot.endMinutes,

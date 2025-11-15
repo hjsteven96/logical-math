@@ -1,5 +1,6 @@
 import { NextResponse } from "next/server";
 import type { NextRequest } from "next/server";
+import type { Prisma } from "@/generated/prisma-client/client";
 import { prisma } from "@/lib/prisma";
 import { getServerAuthSession } from "@/lib/auth";
 import { studentScope } from "@/lib/scope";
@@ -22,7 +23,7 @@ export async function GET(request: NextRequest) {
 
   const gradeFilter = resolveGradeNumbers(grade);
 
-  const where = {
+  const where: Prisma.StudentWhereInput = {
     ...studentScope(userId, role),
     ...(search
       ? {

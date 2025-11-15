@@ -6,7 +6,7 @@ type Record = {
   attendanceStatus: string;
   homeworkStatus: string;
   memo: string | null;
-  teacher?: { name: string | null };
+  teacher?: { name: string | null } | null;
 };
 
 export function RecordTimeline({ records }: { records: Record[] }) {

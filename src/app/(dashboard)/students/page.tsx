@@ -1,4 +1,5 @@
 import { redirect } from "next/navigation";
+import type { Prisma, Role } from "@/generated/prisma-client/client";
 import { prisma } from "@/lib/prisma";
 import { getServerAuthSession } from "@/lib/auth";
 import { studentScope } from "@/lib/scope";
@@ -16,7 +17,16 @@ type PageProps = {
   searchParams?: SearchParams | Promise<SearchParams | undefined> | undefined;
 };
 
-const getStudentRows = (students: Awaited<ReturnType<typeof fetchStudents>>) =>
+const studentInclude = {
+  teachers: { include: { teacher: { select: { id: true, name: true } } } },
+  records: { include: { lessonDay: true } },
+} satisfies Prisma.StudentInclude;
+
+type StudentWithRelations = Prisma.StudentGetPayload<{
+  include: typeof studentInclude;
+}>;
+
+const getStudentRows = (students: StudentWithRelations[]) =>
   students.map((student) => {
     const attendanceRecords = student.records.length || 1;
     const attendanceRate =
@@ -49,10 +59,10 @@ const getStudentRows = (students: Awaited<ReturnType<typeof fetchStudents>>) =>
 
 const fetchStudents = async (
   userId: number,
-  role: string | undefined,
+  role: Role | undefined,
   searchParams?: SearchParams
-) => {
-  const where = {
+): Promise<StudentWithRelations[]> => {
+  const where: Prisma.StudentWhereInput = {
     ...studentScope(userId, role),
     ...(searchParams?.q
       ? {
@@ -74,12 +84,12 @@ const fetchStudents = async (
       : {}),
   };
 
-  return prisma.student.findMany({
+  const students = await prisma.student.findMany({
     where,
     include: {
-      teachers: { include: { teacher: { select: { id: true, name: true } } } },
+      ...studentInclude,
       records: {
-        include: { lessonDay: true },
+        ...studentInclude.records,
         orderBy: { lessonDay: { date: "desc" } },
         take: 6,
       },
@@ -90,6 +100,8 @@ const fetchStudents = async (
       { name: "asc" },
     ],
   });
+
+  return students as StudentWithRelations[];
 };
 
 export default async function StudentsPage({ searchParams }: PageProps) {
