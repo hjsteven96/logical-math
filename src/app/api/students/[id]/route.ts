@@ -5,16 +5,13 @@ import { getServerAuthSession } from "@/lib/auth";
 import { studentScope } from "@/lib/scope";
 import { studentPayloadSchema } from "@/lib/validators";
 
-type Params = {
-  params: { id: string };
-};
-
-export async function GET(_: NextRequest, { params }: Params) {
+export async function GET(_: NextRequest, { params }: { params: Promise<{ id: string }> }) {
   const session = await getServerAuthSession();
   if (!session) {
     return NextResponse.json({ error: "Unauthorized" }, { status: 401 });
   }
-  const studentId = Number(params.id);
+  const { id } = await params;
+  const studentId = Number(id);
   if (Number.isNaN(studentId)) {
     return NextResponse.json({ error: "Invalid id" }, { status: 400 });
   }
@@ -48,7 +45,7 @@ export async function GET(_: NextRequest, { params }: Params) {
   return NextResponse.json({ data: student });
 }
 
-export async function PATCH(request: NextRequest, { params }: Params) {
+export async function PATCH(request: NextRequest, { params }: { params: Promise<{ id: string }> }) {
   const session = await getServerAuthSession();
   if (!session) {
     return NextResponse.json({ error: "Unauthorized" }, { status: 401 });
@@ -58,7 +55,8 @@ export async function PATCH(request: NextRequest, { params }: Params) {
     return NextResponse.json({ error: "Forbidden" }, { status: 403 });
   }
 
-  const studentId = Number(params.id);
+  const { id } = await params;
+  const studentId = Number(id);
   if (Number.isNaN(studentId)) {
     return NextResponse.json({ error: "Invalid id" }, { status: 400 });
   }

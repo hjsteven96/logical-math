@@ -8,7 +8,7 @@ import { RecordTimeline } from "@/components/students/record-timeline";
 import { DailyRecordForm } from "@/components/records/daily-record-form";
 
 type PageProps = {
-  params: { id: string };
+  params: Promise<{ id: string }>;
 };
 
 export default async function StudentDetailPage({ params }: PageProps) {
@@ -16,7 +16,8 @@ export default async function StudentDetailPage({ params }: PageProps) {
   if (!session) {
     redirect("/login");
   }
-  const studentId = Number(params.id);
+  const { id } = await params;
+  const studentId = Number(id);
   if (Number.isNaN(studentId)) {
     notFound();
   }
