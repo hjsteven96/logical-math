@@ -1,6 +1,9 @@
 import "dotenv/config";
 import { defineConfig, env } from "prisma/config";
 
+// prisma generate는 실제 DB 연결이 필요 없으므로 더미 URL 사용
+const databaseUrl = process.env.DATABASE_URL || "postgresql://user:password@localhost:5432/dummy?schema=public";
+
 export default defineConfig({
   schema: "prisma/schema.prisma",
   migrations: {
@@ -8,6 +11,6 @@ export default defineConfig({
   },
   engine: "classic",
   datasource: {
-    url: env("DATABASE_URL"),
+    url: databaseUrl,
   },
 });
